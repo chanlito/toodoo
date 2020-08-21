@@ -1,9 +1,9 @@
 import { Context } from '@nuxt/types';
-import { shallowSsrRef, useContext } from '@nuxtjs/composition-api';
+import { ssrRef, useContext } from '@nuxtjs/composition-api';
 
 export function useIP() {
   const { req } = useContext();
-  const ip = shallowSsrRef(req?.headers?.['x-real-ip'] || 'localhost');
+  const ip = ssrRef(req?.headers?.['x-real-ip'] || 'localhost');
   return { ip };
 }
 

@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, watch, useContext } from '@nuxtjs/composition-api';
+import { defineComponent, useContext } from '@nuxtjs/composition-api';
 import { useIP, useIPMiddleware } from '@/util/ip';
 
 export default defineComponent({
