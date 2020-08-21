@@ -1,0 +1,4 @@
+.env
+.nuxt
+.vercel
+node_modules

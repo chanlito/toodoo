@@ -1,0 +1,26 @@
+{
+  "name": "toodoo",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "generate": "nuxt-ts generate",
+    "start": "nuxt-ts start"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "@nuxtjs/composition-api": "^0.12.2",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.16.0",
+    "express": "^4.17.1",
+    "nuxt": "^2.14.3",
+    "swrv": "^0.7.3"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.3",
+    "@nuxt/typescript-build": "^2.0.2",
+    "@types/express": "^4.17.7",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^9.0.3"
+  }
+}
