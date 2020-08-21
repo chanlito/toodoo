@@ -1,9 +1,15 @@
 import { Context } from '@nuxt/types';
-import { ssrRef, useContext } from '@nuxtjs/composition-api';
+import { useContext } from '@nuxtjs/composition-api';
+import useSWRV from 'swrv';
 
 export function useIP() {
-  const { req } = useContext();
-  const ip = ssrRef(req?.headers?.['x-real-ip'] || 'localhost');
+  const { $axios, req } = useContext();
+  const getIP = async () => {
+    return (
+      req?.headers?.['x-real-ip'] || req?.headers?.['x-forwarded-for'] || (await $axios.$get('https://icanhazip.com/'))
+    );
+  };
+  const { data: ip } = useSWRV('ip', getIP);
   return { ip };
 }
 
