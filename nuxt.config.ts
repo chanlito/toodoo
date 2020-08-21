@@ -7,7 +7,7 @@ const config: NuxtConfig = {
   css: ['@/assets/styles/main.scss'],
   serverMiddleware: [{ path: '/api', handler: '@/api/index.ts' }],
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/composition-api'],
-  modules: ['bootstrap-vue/nuxt'],
+  modules: ['@nuxtjs/axios', 'bootstrap-vue/nuxt'],
   bootstrapVue: {
     bootstrapCSS: false,
     bootstrapVueCSS: false,
