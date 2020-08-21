@@ -1,6 +1,6 @@
 <template>
-  <b-container>
-    <p>
+  <b-container class="p-3" tag="main" fluid>
+    <p class="mb-0">
       Your IP address is <strong>{{ ip }}</strong>
     </p>
   </b-container>
