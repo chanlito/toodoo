@@ -1,9 +1,7 @@
-import { NuxtConfig } from '@nuxt/types';
-import VuetifyLoader from 'vuetify-loader/lib/plugin';
+const VuetifyLoader = require('vuetify-loader/lib/plugin');
+const { sassLoaderOptions, scssLoaderOptions } = require('./util/sass-loader');
 
-import { sassLoaderOptions, scssLoaderOptions } from './util/sass-loader';
-
-const config: NuxtConfig = {
+const config: import('@nuxt/types').NuxtConfig = {
   head: {
     title: 'TooDoo',
     meta: [
@@ -14,8 +12,7 @@ const config: NuxtConfig = {
     ],
     link: [
       {
-        href:
-          'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;600&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;600&display=swap',
         rel: 'stylesheet',
       },
       { href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css', rel: 'stylesheet' },
