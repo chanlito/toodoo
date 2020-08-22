@@ -1,4 +1,5 @@
-const VuetifyLoader = require('vuetify-loader/lib/plugin');
+// @ts-check
+const { VuetifyLoaderPlugin } = require('vuetify-loader');
 const { sassLoaderOptions, scssLoaderOptions } = require('./util/sass-loader');
 
 const config: import('@nuxt/types').NuxtConfig = {
@@ -32,12 +33,13 @@ const config: import('@nuxt/types').NuxtConfig = {
      * Define & customize Webpack plugins
      */
     plugins: [
-      new VuetifyLoader({
+      new VuetifyLoaderPlugin({
         match(originalTag: string, { kebabTag, camelTag }: any) {
           if (kebabTag.startsWith('app-')) {
             return [camelTag, `import ${camelTag} from '@/components/${kebabTag}.vue'`];
           }
         },
+        registerStylesSSR: true,
       }),
     ],
     /**
