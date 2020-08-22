@@ -14,7 +14,10 @@ export default function(ctx: Context) {
       dark: false,
       themes: {
         light: {
-          primary: colors.orange.base,
+          primary: colors.green.darken4,
+        },
+        dark: {
+          primary: colors.deepPurple.base,
         },
       },
     },

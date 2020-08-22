@@ -6,14 +6,16 @@ const config: import('@nuxt/types').NuxtConfig = {
   head: {
     title: 'TooDoo',
     meta: [
+      { charset: 'utf-8' },
       {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
       },
+      { hid: 'description', name: 'description', content: 'TooDoo - a Vue SSR web application.' },
     ],
     link: [
       {
-        href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Rubik:wght@400;600&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap',
         rel: 'stylesheet',
       },
       { href: 'https://cdn.jsdelivr.net/npm/@mdi/font@5.x/css/materialdesignicons.min.css', rel: 'stylesheet' },
