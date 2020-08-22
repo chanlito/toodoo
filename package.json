@@ -15,6 +15,7 @@
     "express": "^4.17.1",
     "nuxt": "^2.14.3",
     "swrv": "^0.7.3",
+    "vue-template-compiler": "2.6.11",
     "vuetify": "^2.3.9",
     "vuetify-loader": "^1.6.0"
   },
