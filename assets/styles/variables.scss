@@ -1,4 +1,10 @@
-$body-font-family: 'Rubik', 'Roboto', sans-serif;
+$body-font-family: 'Inter', 'Roboto', sans-serif;
+$border-radius-root: 0.5rem;
+$btn-text-transform: uppercase;
 $container-padding-x: 1rem;
+
+$material-light: (
+  'app-bar': #ffffff,
+);
 
 @import '~vuetify/src/styles/styles';
