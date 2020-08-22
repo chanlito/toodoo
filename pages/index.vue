@@ -1,20 +1,16 @@
 <template>
-  <b-container class="p-3" tag="main" fluid>
+  <app-container>
     <p class="mb-0">
-      Your IP address is <strong>{{ ip }}</strong>
+      This is a work in progress.
     </p>
-  </b-container>
+  </app-container>
 </template>
 
 <script lang="ts">
-import { defineComponent, useContext } from '@nuxtjs/composition-api';
-import { useIP, useIPMiddleware } from '@/util/ip';
+import { defineComponent } from '@nuxtjs/composition-api';
+import { useIPMiddleware } from '@/util/ip';
 
 export default defineComponent({
   middleware: [useIPMiddleware],
-  setup() {
-    const { ip } = useIP();
-    return { ip };
-  },
 });
 </script>

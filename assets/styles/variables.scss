@@ -1,3 +1,4 @@
-$enable-shadows: true;
+$body-font-family: 'Roboto', sans-serif;
+$container-padding-x: 1rem;
 
-$border-radius: 0.5rem;
+@import '~vuetify/src/styles/styles';
