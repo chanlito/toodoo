@@ -1,5 +1,6 @@
 <template>
-  <span class="text-h5 black px-2 py-2 rounded-lg"
-    ><span class="white--text mr-1">Too</span><span class="primary rounded-lg px-1 black--text">Doo</span></span
+  <span class="text-h6 black px-1 rounded-lg"
+    ><span class="white--text">Too</span
+    ><span class="primary rounded ml-1 black--text" style="padding: 0 2px;">Doo</span></span
   >
 </template>
