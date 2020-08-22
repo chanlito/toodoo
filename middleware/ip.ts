@@ -1,9 +1,3 @@
-import { Middleware } from '@nuxt/types';
+import { useIPMiddleware } from '@/util/ip';
 
-const ip: Middleware = ({ req }) => {
-  if (process.server) {
-    console.log('IP:', req.connection.remoteAddress);
-  }
-};
-
-export default ip;
+export default useIPMiddleware;
