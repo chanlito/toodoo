@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "nuxt": "^2.14.3",
     "swrv": "^0.7.3",
-    "vuetify": "^2.3.9"
+    "vuetify": "^2.3.9",
+    "vuetify-loader": "^1.6.0"
   },
   "devDependencies": {
     "@nuxt/types": "^2.14.3",
@@ -26,7 +27,6 @@
     "deepmerge": "^4.2.2",
     "fibers": "^5.0.0",
     "sass": "^1.26.10",
-    "sass-loader": "8.0.2",
-    "vuetify-loader": "^1.6.0"
+    "sass-loader": "8.0.2"
   }
 }
