@@ -1,9 +1,9 @@
 <template>
-  <app-container>
+  <v-container style="max-width: 1080px;">
     <p class="mb-0">
       This is a work in progress.
     </p>
-  </app-container>
+  </v-container>
 </template>
 
 <script lang="ts">
