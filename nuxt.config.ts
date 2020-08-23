@@ -11,7 +11,9 @@ const config: import('@nuxt/types').NuxtConfig = {
         name: 'viewport',
         content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
       },
-      { hid: 'description', name: 'description', content: 'TooDoo - a Vue SSR web application.' },
+      { property: 'og:image', content: 'https://toodoo.vercel.app/android-chrome-512x512.png' },
+      { name: 'title', content: 'TooDoo&trade;' },
+      { name: 'description', content: "Our mission is to help you do 'em all.", hid: 'description' },
     ],
     link: [
       {
